@@ -1,0 +1,16 @@
+---
+- hosts: localhost
+  roles:
+    - role: localhost
+
+      #- hosts: client
+      #roles:
+      # - role: clientserver
+      #- hosts: git
+  roles:
+    - role: gitserver
+      vars:
+        begin: "/home/"
+        middle: "/.ssh/"
+        end: "_id_rsa.pub"
+   

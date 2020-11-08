@@ -1,0 +1,6 @@
+---
+- name: create ssh directory
+  file:
+    path: /home/{{ item }}/.ssh
+    state: directory
+    mode: '0755'
